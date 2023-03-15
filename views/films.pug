@@ -1,0 +1,89 @@
+doctype html
+html(lang="de")
+  head
+    title Video List
+    meta(content="width=device-width, initial-scale=1" name="viewport")
+    meta(http-equiv="Content-Security-Policy" content="frame-src https://player.vimeo.com;")
+    //Preloader styles - need to be rendered immediately
+    style.
+      .preloader{
+        opacity: 1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 999;
+        background: #255D62;
+        transition: opacity 0.1s ease;
+        pointer-events: none;
+      }
+      .preloader svg{
+        max-width: 150px;
+      }
+    //Stylesheets
+    link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css')
+    link(rel='stylesheet' href='/css/style.css')
+    //Scripts - defer to load after page is rendered
+    script( defer src='https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js')
+    script( defer src='/js/index.js')
+
+  body
+  .preloader
+    svg#etnQHisexFK1(xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewbox='0 0 1000 1120' shape-rendering='geometricPrecision' text-rendering='geometricPrecision')
+      style.
+        #etnQHisexFK7 {animation-name: etnQHisexFK7_f_p, etnQHisexFK7_f_o, etnQHisexFK7_s_p, etnQHisexFK7_s_o, etnQHisexFK7_s_do;animation-duration: 3300ms;animation-fill-mode: forwards;animation-timing-function: linear;animation-direction: alternate;animation-iteration-count: infinite;}@keyframes etnQHisexFK7_f_p { 0% {fill: #ffd6b4} 66.666667% {fill: #ffd6b4;animation-timing-function: cubic-bezier(0.77,0,0.175,1)} 78.787879% {fill: #fff6e9} 100% {fill: #fff6e9}}@keyframes etnQHisexFK7_f_o { 0% {fill-opacity: 0} 66.666667% {fill-opacity: 0;animation-timing-function: cubic-bezier(0.77,0,0.175,1)} 78.787879% {fill-opacity: 1} 100% {fill-opacity: 1}}@keyframes etnQHisexFK7_s_p { 0% {stroke: #ffd6b4} 66.666667% {stroke: #ffd6b4;animation-timing-function: cubic-bezier(0.77,0,0.175,1)} 78.787879% {stroke: #fff6e9} 100% {stroke: #fff6e9}}@keyframes etnQHisexFK7_s_o { 0% {stroke-opacity: 0} 39.393939% {stroke-opacity: 0} 44.242424% {stroke-opacity: 1} 100% {stroke-opacity: 1}}@keyframes etnQHisexFK7_s_do { 0% {stroke-dashoffset: 3203} 42.424242% {stroke-dashoffset: 3203;animation-timing-function: cubic-bezier(0.77,0,0.175,1)} 60.606061% {stroke-dashoffset: 2294;animation-timing-function: cubic-bezier(0.77,0,0.175,1)} 78.787879% {stroke-dashoffset: 980} 100% {stroke-dashoffset: 980}} #etnQHisexFK8_to {animation: etnQHisexFK8_to__to 3300ms linear infinite alternate forwards}@keyframes etnQHisexFK8_to__to { 0% {transform: translate(992.27px,632.59px)} 24.242424% {transform: translate(992.27px,632.59px);animation-timing-function: cubic-bezier(0.445,0.05,0.55,0.95)} 39.393939% {transform: translate(489.052671px,634.37821px)} 100% {transform: translate(489.052671px,634.37821px)}} #etnQHisexFK8 {animation-name: etnQHisexFK8_f_p, etnQHisexFK8_f_o, etnQHisexFK8_s_p, etnQHisexFK8_s_do;animation-duration: 3300ms;animation-fill-mode: forwards;animation-timing-function: linear;animation-direction: alternate;animation-iteration-count: infinite;}@keyframes etnQHisexFK8_f_p { 0% {fill: #ffd6b4} 66.666667% {fill: #ffd6b4;animation-timing-function: cubic-bezier(0.77,0,0.175,1)} 78.787879% {fill: #f0ad50} 100% {fill: #f0ad50}}@keyframes etnQHisexFK8_f_o { 0% {fill-opacity: 0} 66.666667% {fill-opacity: 0;animation-timing-function: cubic-bezier(0.77,0,0.175,1)} 78.787879% {fill-opacity: 1} 100% {fill-opacity: 1}}@keyframes etnQHisexFK8_s_p { 0% {stroke: #ffd6b4} 66.666667% {stroke: #ffd6b4;animation-timing-function: cubic-bezier(0.77,0,0.175,1)} 78.787879% {stroke: #f0ad50} 100% {stroke: #f0ad50}}@keyframes etnQHisexFK8_s_do { 0% {stroke-dashoffset: 2658.062168} 24.242424% {stroke-dashoffset: 2658.062168;animation-timing-function: cubic-bezier(0.77,0,0.175,1)} 42.424242% {stroke-dashoffset: 1699;animation-timing-function: cubic-bezier(0.77,0,0.175,1)} 60.606061% {stroke-dashoffset: 592;animation-timing-function: cubic-bezier(0.77,0,0.175,1)} 78.787879% {stroke-dashoffset: 0} 100% {stroke-dashoffset: 0}} #etnQHisexFK9 {animation: etnQHisexFK9_f_o 3300ms linear infinite alternate forwards}@keyframes etnQHisexFK9_f_o { 0% {fill-opacity: 0} 66.666667% {fill-opacity: 0;animation-timing-function: cubic-bezier(0.77,0,0.175,1)} 78.787879% {fill-opacity: 1} 100% {fill-opacity: 1}} #etnQHisexFK11_to {animation: etnQHisexFK11_to__to 3300ms linear infinite alternate forwards}@keyframes etnQHisexFK11_to__to { 0% {transform: translate(519.515737px,876.035085px)} 24.242424% {transform: translate(519.515737px,876.035085px);animation-timing-function: cubic-bezier(0.445,0.05,0.55,0.95)} 39.393939% {transform: translate(33.362956px,876.035087px)} 100% {transform: translate(33.362956px,876.035087px)}} #etnQHisexFK11_ts {animation: etnQHisexFK11_ts__ts 3300ms linear infinite alternate forwards}@keyframes etnQHisexFK11_ts__ts { 0% {transform: scale(0,0)} 6.060606% {transform: scale(0,0);animation-timing-function: cubic-bezier(0.47,0,0.745,0.715)} 12.121212% {transform: scale(1,1);animation-timing-function: cubic-bezier(0.33,-1.5,1,0.285)} 39.393939% {transform: scale(0.34,0.34)} 68.484848% {transform: scale(0.34,0.34)} 70.909091% {transform: scale(0,0)} 100% {transform: scale(0,0)}}
+      g(transform='matrix(.939281 0 0 0.939279 30.874217 29.159412)')
+        path#etnQHisexFK7(d='M979.076153,916.10821l1-906.478212L36.360076,901.623134L979.076154,908.68' transform='translate(1 0)' fill='#ffd6b4' fill-opacity='0' stroke='#ffd6b4' stroke-width='30' stroke-opacity='0' stroke-dashoffset='3203' stroke-dasharray='3208.909914')
+        g#etnQHisexFK8_to(transform='translate(992.27,632.59)')
+          path#etnQHisexFK8(d='M9.73,908.69l958.911267-.01L9.73,356.49v552.19' transform='scale(0.967928,0.967928) translate(-500,-632.59)' fill='#ffd6b4' fill-opacity='0' stroke='#ffd6b4' stroke-width='30' stroke-linecap='square' stroke-dashoffset='2658.062168' stroke-dasharray='2658.062168')
+        path#etnQHisexFK9(d='M-1.170552,909.922104l378.236448-344.52432l625.163059,344.524321-1003.399507-.000001' transform='matrix(.991262 0 0 1.035233 3.809946-25.873178)' fill='#ffd6b4' fill-opacity='0' stroke-width='2.24' stroke-linejoin='round')
+      g#etnQHisexFK11_to(transform='translate(519.515737,876.035085)')
+        g#etnQHisexFK11_ts(transform='scale(0,0)')
+          ellipse(rx='40' ry='40' transform='translate(0,0)' fill='#ffd6b4' stroke-width='0')
+  if err
+    div(class="error")
+      h1 Hoppla
+      p #{err}
+      a(href="/") Zurück zur Startseite
+  else
+    div(class='container')
+      div(class='hero')
+        div(class='hero-content')
+          img(src='/images/logo-hell.png' alt='Filmevent Logo' class='logo')
+          p presents
+          h1 #{eventName}
+          h3 Filmfestival #{year}
+      div(class='test')
+        div(class='swiper')
+          div(class='swiper-wrapper' id='swiper-wrapper')
+            each video in videos
+              div(class='video swiper-slide' )
+                  img(crossorigin="anonymous" src=video.pictures.base_link data-url=video.player_embed_url class='videoimage')
+                  div(class='description')
+                    div(class='description-content')
+                      h2= video.name
+                      p= video.description
+                    if video.privacy.download == true
+                      a(href=video.link target="_blank")
+                        img(src='/images/download.svg' alt='Download' class='download')
+                    
+          div(class='swiper-button-prev')
+          div(class='swiper-button-next')
+
+          div(class='modal' click='closeModal()')
+            span(class='close') &times;
+            each video in videos
+              iframe(id=video.player_embed_url frameborder="0" allow="autoplay; fullscreen" allowfullscreen src=video.player_embed_url title=video.name referrerpolicy="strict-origin-when-cross-origin" style='display: none;')
+      div(class="footer")
+        div(class="footer-container")
+          p(class="footer-text") Filmevent | Kembserweg 7 | 4055 Basel
+        div(class="footer-container")
+          p(class="footer-text") <a href="https://www.filmevent.ch" target="_blank">Filmevent</a>
+          p(class="footer-text") <a href="https://www.instagram.com/filmevent.ch/" target="_blank">Instagram</a>
+          p(class="footer-text") <a href="https://www.linkedin.com/company/filmevent-ch" target="_blank">LinkedIn</a>
+        
+

@@ -1,0 +1,55 @@
+doctype html
+html(lang="de")
+  head
+    title Video Upload
+    link(rel='stylesheet' href='/css/style.css')
+    link(rel="stylesheet", href="/css/upload.css")
+    meta(content="width=device-width, initial-scale=1" name="viewport")
+    script( defer src="https://cdn.jsdelivr.net/npm/tus-js-client@latest/dist/tus.min.js")
+    script( defer src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js")
+    script( defer src="/js/upload.js" type="module") 
+  body
+    div.form
+        form(enctype='multipart/form-data')
+            h1(style='text-align: center; font-family: Poppins') Upload
+            input#filmName(type='text' name='filmName' placeholder='Filmname' required)
+            input#genreInput.dropdown(list='genreList' name='Genre' placeholder='Genre' autocomplete='off' required)
+            datalist#genreList
+                option(value=`Mafia`) Mafia
+                option(value=`Western`) Western
+                option(value=`Superhero`) Superhero
+                option(value=`Kung Fu`) Kung Fu
+                option(value=`Heimatfilm`) Heimatfilm
+                option(value=`James Bond`) James Bond
+                option(value=`Musikvideo`) Musikvideo
+                option(value=`Buddy Movie`) Buddy Movie
+                option(value=`Stummfilm`) Stummfilm
+                option(value=`ET`) ET
+                option(value=`Krimi`) Krimi
+                option(value=`Zombie`) Zombie
+                option(value=`Great`) Gatsby
+                option(value=`News`) News
+            input#tlInput.dropdown(list='tlList' name='TL' autocomplete='off' placeholder='TL' required)
+            // must be first element after input and use <option>value</option> format
+            datalist#tlList
+                each TL in tlList
+                    option(value=`${TL}`) #{TL}
+            select#eventInput.dropdown(name='id' autocomplete='off' placeholder='Event' required)
+                option.placeholder(value='' disabled selected hidden) Event auswählen
+                each event in eventList
+                    option(value= event.id) #{event.column_values[1].text} | #{event.name}
+            div#drop-area
+                p#drop-text
+                    | Drop your video here
+                p#or
+                    | or
+                label.button(for="video" class="file-upload" id="file-upload") 
+                    | Choose a file
+                input#video(type='file' name='video' accept="video/*" required)
+            button.button#submit(type='submit') 
+                p#submit-text Upload Video
+                .loader#loader
+            .base 
+                .progress#progress
+    p#hidden.hidden()
+        | #{eventData}

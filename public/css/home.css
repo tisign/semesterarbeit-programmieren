@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    
+}
+  .welcome-screen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    color: #fff;
+    background-color: #202020;
+    opacity: 1;
+    background-image:  url(/images/backgroundimage.jpg);
+    background-size: cover;
+    background-position: center center;
+    backdrop-filter: blur(1px) brightness(0.7);
+
+  }
+
+  .welcome-screen img {
+    max-height: 50px;
+    margin: 50px;
+}
+.welcome-screen p {
+  font-family: Intro-Trial;
+  font-size: 3rem;
+  margin: 0;
+}
+.welcome-screen a{
+  font-family: Poppins;
+  font-size: 1rem;
+  text-decoration: none;
+  color: white;
+  border: 3px solid white;
+  padding: 10px 20px;
+  border-radius: 40px;
+  transition: all 0.3s ease;
+  margin-top: 30px;
+  display: block;
+  width: fit-content;
+}
+.welcome-screen a:hover{
+  background: white;
+  color: black;
+}

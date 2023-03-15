@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.container-404{
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('/images/space.jpg');
+    background-size: cover;
+    background-position: center;
+    gap: 50px;
+}
+.container-404 img{
+    width: 25%;
+    max-width: 500px;
+    -webkit-font-smoothing: antialiased;
+}
+.text{
+    z-index: 10;
+    font-family: Intro-Trial-BkAlt;
+    color: white;
+}
+.text h1{
+    font-size: 5rem;
+    margin: 10px 0;
+}
+.text p{
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+.text a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+    border: 3px solid white;
+    padding: 10px 20px;
+    border-radius: 40px;
+    transition: all 0.3s ease;
+    margin-top: 30px;
+    display: block;
+    width: fit-content;
+}
+.text a:hover{
+    background: white;
+    color: black;
+}
